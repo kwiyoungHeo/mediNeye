@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".activity.NFCActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_add_nfc"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/textColor_y">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_map"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:text="NFC 추가하기"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+    </LinearLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <!--있을때-->
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:background="@color/backgroundColor"
+            android:divider="@color/textColor_w"
+            android:dividerHeight="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listview">
+
+        </ListView>
+
+        <TextView
+
+            android:background="@color/textColor_w"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/text"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+</FrameLayout>
+
+</LinearLayout>

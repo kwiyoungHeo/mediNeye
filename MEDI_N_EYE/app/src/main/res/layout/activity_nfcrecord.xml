@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.NfcRecordActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    >
+
+    <FrameLayout
+        android:layout_margin="29dp"
+        android:background="@drawable/background_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- NFC 태그 받기-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/textColor_w"
+                android:textSize="40sp"
+                android:text="NFC를 태그를\n접촉해주세요"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_nfc"/>
+        </LinearLayout>
+
+        <!-- 음성 녹음 받기 -->
+        <LinearLayout
+            android:id="@+id/layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/textColor_w"
+                android:textSize="30sp"
+                android:padding="30dp"
+                android:text="NFC를 리스트 추가"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="75dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_record_stop"
+                    android:text="녹음중지"/>
+                <Button
+                    android:background="@drawable/img_play"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/btn_play"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="재생"/>
+                <Button
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_setting"
+                    android:text="완료"/>
+
+                <Button
+                    android:background="@drawable/img_record_start"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/btn_record"
+                    android:text="녹음"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:background="@drawable/img_pause"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/btn_play_stop"
+                    android:text="재생중지"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="75dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/textColor_w"
+                android:textSize="30sp"
+                android:padding="30dp"
+                android:text="녹음 완료 후에\nNFC 태그를 접촉하면\n자동으로 입력됩니다"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- NFC에 URI 쓰기 -->
+        <LinearLayout
+            android:visibility="gone"
+
+            android:id="@+id/layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>

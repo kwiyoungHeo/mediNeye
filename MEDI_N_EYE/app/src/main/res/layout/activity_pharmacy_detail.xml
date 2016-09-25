@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:onClick="onClick"
+        android:id="@+id/infoLayout"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_main"
+        android:layout_margin="29dp">
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/detTvCnt"   />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/detTvDis"  />
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/detTvDiv" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/detTvTel"  />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/detTvEt"  />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/detTvLat"  />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/detTvLong"  />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="프라자 약국"
+            android:id="@+id/detTvName"
+            android:padding="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor_w"
+            android:textSize="50sp"/>
+
+        <ImageView
+            android:layout_margin="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="10dp"
+            android:layout_height="3dp"
+            android:src="@drawable/line"/>
+        <TextView
+            android:textColor="@color/textColor_w"
+             android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="서울특별시 강북구\n삼양로 241, (미아동)"
+            android:id="@+id/detTvAddr"  />
+
+        <TextView
+            android:layout_marginTop="34dp"
+            android:textColor="@color/textColor_w"
+             android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AM 09:00 ~ PM 10:30"
+            android:id="@+id/detTvSt"
+            android:layout_marginBottom="40dp"/>
+    <Button
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/btnCancel"
+        android:onClick="onClick"  />
+
+        <LinearLayout
+            android:layout_margin="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/line_call">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_call"/>
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor_y"
+                android:text="02-514-4222"
+                android:background="@null"
+                android:id="@+id/btnCall"
+                android:textStyle="bold"
+                android:textSize="35sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

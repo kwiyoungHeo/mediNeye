@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".activity.MediBarcodeResultActivity">
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/layout_exist"
+        android:layout_margin="29dp"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="타이레놀정500밀리그람(아세트아미노펜)"
+        android:textStyle="bold"
+        android:textColor="@color/textColor_w"
+        android:textSize="40sp"
+        android:id="@+id/name"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="27dp"
+        android:layout_height="3dp"
+        android:src="@drawable/line"/>
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/textColor_w"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="두통 및 치통"
+        android:id="@+id/ctgList"  />
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="55dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/textColor_w"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/description"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/textColor_w"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/company"  />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_none"
+        android:layout_margin="29dp"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/textColor_w"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            android:text="검색된 약이 없습니다"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="kr.co.dongduk.medineye.fragment.Main_MediInfo_Fragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="29dp"
+        android:background="@drawable/background_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tts_medicine"
+        android:textStyle="bold"
+        android:textColor="@color/textColor_w"
+        android:textSize="40sp"/>
+
+
+    <ImageView
+
+        android:layout_marginTop="93dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/img_pill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+ </FrameLayout>

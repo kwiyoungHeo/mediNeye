@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="15dp"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:textColor="@color/textColor_w"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/nfc_id" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@color/textColor_w"
+        android:textSize="20dp"
+        android:layout_below="@+id/nfc_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/nfc_text" />
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/img_arrow"/>
+</RelativeLayout>

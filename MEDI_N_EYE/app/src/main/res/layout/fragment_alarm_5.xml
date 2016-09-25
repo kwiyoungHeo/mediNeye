@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm_time_3"
+        android:textStyle="bold"
+        android:textColor="@color/textColor_w"
+        android:textSize="40sp"/>
+
+    <RelativeLayout
+        android:layout_margin="50dp"
+        android:background="@drawable/alarm_dot"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:padding="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_voice"/>
+        <Button
+            android:id="@+id/btn_stt"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"  />
+    </RelativeLayout>
+
+</LinearLayout>

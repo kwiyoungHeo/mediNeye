@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="kr.co.dongduk.medineye.activity.SettingPhoneActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="29dp"
+        android:background="@drawable/background_main"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="보호자 번호 설정"
+            android:id="@+id/textView"
+            android:textColor="@color/textColor_w"
+            android:textSize="35sp"
+            android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="010-1234-5678"
+        android:textColorHint="@color/textColor_w"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:background="@null"
+        android:textColor="@color/textColor_y"
+        android:layout_marginTop="129dp" />
+    <ImageView
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/line"/>
+
+    <TextView
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="※ 위급 상황 발생 시,\n위의 연락처로 연결됩니다"
+        android:textColor="@color/textColor_w"
+        android:textSize="25sp"
+        android:layout_marginTop="70dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_margin="29dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="등록하기"
+        android:textColor="@color/textColor_w"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/button"
+        android:background="@drawable/background_main"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
